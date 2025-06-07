@@ -3,3 +3,4 @@
 
 # Ignore Python virtual environment
 platform/venv/
+node_modules
