@@ -1,278 +1,136 @@
-<html><head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Unified Smoke Stream Platform</title>
-<style>
-    body {
-        font-family: sans-serif;
-        margin: 0;
-        background-color: #1a1a1a;
-        color: #e0e0e0;
-        line-height: 1.6;
-        overflow-x: hidden;
-    }
-
-    h1, h2, h3 {
-        color: #bb86fc;
-        margin-bottom: 0.5em;
-    }
-
-    section {
-        padding: 4em 2em;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .hero {
-        text-align: center;
-        padding: 6em 2em;
-    }
-
-    .hero h1 {
-        font-size: 3em;
-        margin-bottom: 0.5em;
-    }
-
-    .hero p {
-        font-size: 1.2em;
-        color: #b3b3b3;
-    }
-
-    .components {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2em;
-    }
-
-    .component {
-        background-color: #272727;
-        padding: 2em;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .component:hover {
-        transform: scale(1.05);
-    }
-
-    .component h3 {
-        margin-top: 0;
-    }
-
-    .component ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    .component ul li {
-        margin-bottom: 0.5em;
-        display: flex;
-        align-items: center;
-    }
-
-    .component ul li::before {
-        content: "🚀";
-        margin-right: 0.5em;
-    }
-
-    .links {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1em;
-    }
-
-    .link-card {
-        background-color: #333333;
-        padding: 1.5em;
-        border-radius: 6px;
-        text-align: center;
-        transition: background-color 0.3s ease-in-out;
-    }
-
-    .link-card:hover {
-        background-color: #444444;
-    }
-
-    .link-card a {
-        display: block;
-        color: #fff;
-        text-decoration: none;
-    }
-
-    .footer {
-        text-align: center;
-        padding: 2em;
-        background-color: #121212;
-        color: #777;
-        font-size: 0.9em;
-    }
-
-    .footer a {
-        color: #bb86fc;
-        text-decoration: none;
-    }
-
-    .footer a:hover {
-        text-decoration: underline;
-    }
-
-    svg.icon {
-        width: 1.5em;
-        height: 1.5em;
-        margin-right: 0.5em;
-        fill: #bb86fc;
-        vertical-align: middle;
-    }
-
-    /* Animations */
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(20px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    .animate-up {
-        animation: fadeInUp 0.8s ease-out;
-    }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic Tech AI | The Future of Digital Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <section class="hero animate-up">
-        <h1>Unified Smoke Stream Platform</h1>
-        <p>Connect, create, and explore the future of technology, art, and community through AI, IoT, and immersive experiences.</p>
-    </section>
 
-    <section class="animate-up">
-        <h2>Smoke Stream Platform</h2>
-        <div class="component">
-            <h3>Concept: Central Hub</h3>
-            <ul>
-                <li><svg class="icon" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3L2 12h3v8z"/></svg> AI-Powered Curation: Personalized content feeds.</li>
-                <li><svg class="icon" viewBox="0 0 24 24"><path d="M10 16.5l6-4.5-6-4.5V14H4v3h6zM14 7.6c1.7 1.3 2.8 3.5 2.8 5.7 0 4.4-3.6 8-8 8S2 17.7 2 13.3c0-2.2 1.1-4.3 2.8-5.7l1.3 1.1c-1.3 1-2.1 2.5-2.1 4.6 0 3.3 2.7 6 6 6s6-2.7 6-6c0-2.1-.8-3.6-2.1-4.6l1.3-1.1z"/></svg> Immersive Experiences: Support for VR/AR content.</li>
-                <li><svg class="icon" viewBox="0 0 24 24"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM10 20H8v-7h2v7zm-1-9h1.5v4.5H9.5V11zm6 9h-2v-3.5h2V20zm-1-5h1.5v2H14.5V15z"/></svg> IoT Integration: Interact with smart devices.</li>
-                <li><svg class="icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.7 3.47-2.7 6-2.7 2.54 0 5.1 1 5.97 2.7-1.29 1.94-3.5 3.22-6 3.22z"/></svg> User Profiles: Manage content and community interaction.</li>
-                <li><svg class="icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg> Search Functionality: Find any content on the platform.</li>
-            </ul>
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo">Epic Tech <span>AI</span></a>
+        <nav class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#technology">Technology</a>
+            <a href="#pricing">Services</a>
+            <a href="#waas">WaaS</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Architecting Sentient Digital Realities</h1>
+            <p class="subtitle">
+                A hyper-accelerated platform for creating, deploying, and evolving next-generation AI-driven entertainment and social ecosystems.
+            </p>
+            <a href="#features" class="cta-button">Discover the Future</a>
         </div>
     </section>
 
-    <section class="animate-up">
-        <h2>Content Hubs</h2>
-        <div class="components">
-            <div class="component">
-                <h3>AI Art Showcase</h3>
-                <ul>
-                    <li>🖼️ Image browsing</li>
-                    <li>🧑‍🎨 User showcases</li>
-                    <li>👤 Artist profiles</li>
-                    <li>🔗 Potential NFT integration</li>
-                </ul>
-            </div>
-            <div class="component">
-                <h3>Live IoT Data Stream</h3>
-                <ul>
-                    <li>📊 Interactive dashboards</li>
-                    <li>⚙️ Customizable data feeds</li>
-                    <li>🔌 IoT device management</li>
-                </ul>
-            </div>
-            <div class="component">
-                <h3>VR Exploration Portal</h3>
-                <ul>
-                    <li>🌐 Virtual environment browsing</li>
-                    <li>🧑‍🤝‍🧑 User-created experiences</li>
-                    <li><svg class="icon" viewBox="0 0 24 24"><path d="M19 7v4h-3l3.29 3.29-3.3 3.3V17h4v-3l3.29-3.29-3.3-3.3V7zM14 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2m-4 2H4V10h6v4z"/></svg> VR content streaming</li>
-                </ul>
-            </div>
-            <div class="component">
-                <h3>Code Sharing Repository</h3>
-                <ul>
-                    <li>🐍 Python AI code</li>
-                    <li><svg class="icon" viewBox="0 0 24 24"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H9v-2h4V7h2v4h4v2z"/></svg> JavaScript IoT code</li>
-                    <li><svg class="icon" viewBox="0 0 24 24"><path d="M10 16.5l6-4.5-6-4.5V14H4v3h6zM14 7.6c1.7 1.3 2.8 3.5 2.8 5.7 0 4.4-3.6 8-8 8S2 17.7 2 13.3c0-2.2 1.1-4.3 2.8-5.7l1.3 1.1c-1.3 1-2.1 2.5-2.1 4.6 0 3.3 2.7 6 6 6s6-2.7 6-6c0-2.1-.8-3.6-2.1-4.6l1.3-1.1z"/></svg> VR Development code</li>
-                    <li>💬 Code commenting</li>
-                    <li><svg class="icon" viewBox="0 0 24 24"><path d="M14 10H3v2h11v-2zm0-4H3v2h11V6zm4 8v-4c0-1.11-.89-2-2-2h-1v4H3v6h13c1.11 0 2-.89 2-2zm-2 0H5v-2h10v2z"/></svg> Version control</li>
-                    <li>👤 User profiles</li>
-                </ul>
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <div class="container">
+            <h2 class="section-title">Core Capabilities</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                    <h3>AI Content Generation</h3>
+                    <p>Dynamically generate multi-modal content (text, image, audio, video) with deep personalization and narrative intelligence.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-vr-cardboard"></i></div>
+                    <h3>Immersive Experiences</h3>
+                    <p>Orchestrate seamless, interactive, and adaptive experiences that captivate and engage users on a cognitive level.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-users"></i></div>
+                    <h3>Advanced Social Platforms</h3>
+                    <p>Build thriving digital communities with real-time interaction, collaborative spaces, and intelligent connection suggestions.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="animate-up">
-        <h2>Community Engagement</h2>
-        <div class="components">
-            <div class="component">
-                <h3>Discussions</h3>
-                <ul>
-                    <li><svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm-2 16H6v-2h6v2zm0-4H6v-2h6v2zm-1-4V3.5L18.5 9H13z"/></svg> Topic-based forums</li>
-                    <li><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 8c0-4.41-4.03-8-9-8s-9 3.59-9 8c0 5.29 4.47 9.67 11 11.49V19h-3v-3.89c-3.97-1.52-6.8-5.13-6.8-9.11 0-3.87 3.13-7 7-7s7 3.13 7 7c0 3.98-2.83 7.6-6.8 9.11V19h-3v1.49c6.53-1.82 11-6.2 11-11.49z"/></svg> User engagement tools</li>
-                    <li>🔔 Real-time notifications</li>
-                </ul>
-            </div>
-            <div class="component">
-                <h3>Community Features</h3>
-                <ul>
-                    <li><svg class="icon" viewBox="0 0 24 24"><path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.01 8.6 1.5 6.71 4.69 3.1 5.51 2.76 9.19l-2.4 2.79L4.6 14.79l-.34 3.7 3.61.82 1.89 3.19L12 21.99l3.4 0.51 1.89-3.19 3.61-.82.34-3.7L19.4 14.79 23 12zm-10 5h-1v-4h1v4zm-1-6c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/></svg> Top Contributor Recognition</li>
-                    <li>🗓️ Community Events: Online/offline meetups</li>
-                    <li>🏆 Leaderboard System: Gamified ranking</li>
-                </ul>
-            </div>
-            <div class="component">
-                <h3>Live Streaming on <a href="https://x.com" style="color: #bb86fc; text-decoration: underline;">X.com</a></h3>
-                <ul>
-                    <li>🔴 Direct streaming functionality</li>
-                    <li>💬 Real-time chat and interaction</li>
-                </ul>
+    <!-- Technology Stack Section -->
+    <section id="technology" class="section">
+        <div class="container">
+            <h2 class="section-title">Powered by a Quantum-Cognitive Architecture</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <h3>FastAPI Backend</h3>
+                    <p>A high-performance, asynchronous API gateway ensures hyper-efficient data processing and scalability.</p>
+                </div>
+                <div class="tech-card">
+                    <h3>Multi-Modal AI</h3>
+                    <p>Leverages next-gen models for seamless synthesis of diverse media types into cohesive experiences.</p>
+                </div>
+                <div class="tech-card">
+                    <h3>Real-time Event System</h3>
+                    <p>A robust real-time engine powers live interactions, from chat to collaborative content creation.</p>
+                </div>
+                <div class="tech-card">
+                    <h3>Scalable by Design</h3>
+                    <p>Architected for infinite scalability and adaptive resilience, ready for exponential growth.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="animate-up">
-        <h2>Ecosystem Links</h2>
-        <div class="links">
-            <div class="link-card"><a href="https://example.com/smoken-token-store">Smoken Token Store</a></div>
-            <div class="link-card"><a href="https://example.com/ai-tech-made-easy">AI Tech Made Easy</a></div>
-            <div class="link-card"><a href="https://www.youtube.com/c/EpicTechAI">EpicTech AI YouTube Channel</a></div>
-            <div class="link-card"><a href="https://example.com/smoken-token">Smoken Token</a></div>
-            <div class="link-card"><a href="https://example.com/ai-tech">AI Tech</a></div>
-            <div class="link-card"><a href="https://example.com/ai-butcher-blog">AI Butcher Blog</a></div>
-            <div class="link-card"><a href="https://example.com/ai-butcher-home">AI Butcher Home</a></div>
-            <div class="link-card"><a href="https://example.com/stripe-subscription">Stripe Subscription</a></div>
-            <div class="link-card"><a href="https://example.com/leo-v1">Leo v1.0 Release</a></div>
-            <div class="link-card"><a href="https://example.com/biz-site">Biz Site</a></div>
+    <!-- Pricing Section -->
+    <section id="pricing" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-cogs"></i></div>
+                    <h3>Custom Work Request</h3>
+                    <p>Bespoke solutions tailored to your unique requirements. Request custom development work from our expert engineers.</p>
+                    <a href="https://buy.stripe.com/dR6dRZ7Gk8L16FaeUX" class="cta-button" target="_blank">Request Now</a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-user-tie"></i></div>
+                    <h3>AI-Engineer Service</h3>
+                    <p>Hire a dedicated AI engineer to work on your projects, providing expertise and accelerating your development.</p>
+                    <a href="https://buy.stripe.com/7sI3dlgcQ4uL0gMeUW" class="cta-button" target="_blank">Hire an Engineer</a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-robot"></i></div>
+                    <h3>Sm0k367AI Access</h3>
+                    <p>Gain access to our foundational AI models and tools for your own applications and experiments.</p>
+                    <a href="https://buy.stripe.com/aEU4hp0dS6CT2oU6op" class="cta-button" target="_blank">Get Access</a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-star"></i></div>
+                    <h3>Premium Subscription</h3>
+                    <p>Unlock the full potential of the Epic Tech AI platform with our all-inclusive premium subscription.</p>
+                    <a href="https://buy.stripe.com/8wM6px5ycf9pgfK000" class="cta-button" target="_blank">Go Premium</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="animate-up">
-        <h2>Technical Considerations</h2>
-        <p>Our platform is built with a modular architecture, focusing on scalability and security. We seamlessly integrate AI across all components, ensure compatibility with various IoT protocols, and support leading VR/AR technologies. Efficient database management and a comprehensive API system are central to our design.</p>
+    <!-- WaaS Section -->
+    <section id="waas" class="section waas-section">
+        <div class="container">
+            <h2 class="section-title">Website-as-a-Service (WaaS)</h2>
+            <p>Empower your users to become creators. Our WaaS architecture allows anyone to generate and deploy their own AI-powered websites and digital spaces using our intuitive tools and templates.</p>
+            <a href="#contact" class="cta-button">Request Early Access</a>
+        </div>
     </section>
 
-    <section class="animate-up">
-        <h2>Implementation Phases (Conceptual)</h2>
-        <p>We are rolling out the platform in phases:</p>
-        <ul>
-            <li><strong>Phase 1 (MVP):</strong> Core platform, AI-powered curation, basic IoT integration, and AI Art showcase.</li>
-            <li><strong>Phase 2:</strong> VR exploration portal, code sharing repository, community discussions, and basic user profile functionality.</li>
-            <li><strong>Phase 3:</strong> Live streaming on X.com integration, advanced community features, Smoken Token Store.</li>
-            <li><strong>Phase 4:</strong> Deep IoT integration, gamified systems, and monetization strategies.</li>
-        </ul>
-    </section>
-
-    <section class="animate-up">
-        <h2>Next Steps</h2>
-        <p>We are currently in the detailed feature planning stage, defining specific requirements and user flows. Technology stack selection and team assembly are also underway. Stay tuned for more updates!</p>
-    </section>
-
-    <footer class="footer">
-        &copy; 2024 Unified Smoke Stream Platform | Follow us on <a href="https://x.com/EpicTechAI">X.com</a>
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <p>&copy; 2025 Epic Tech AI. All Rights Reserved.</p>
+            <p>Contact: epictechai@gmail.com | <a href="https://x.com/EpicTechAI" target="_blank">x.com/EpicTechAI</a></p>
+        </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
