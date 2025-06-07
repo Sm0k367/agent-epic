@@ -1,9 +1,9 @@
-{
+
   "name": "epic-tech-ai-platform",
   "version": "1.0.0",
   "description": "The development environment runner for the Epic Tech AI Platform.",
   "scripts": {
-    "dev:backend": "platform\\venv\\Scripts\\python -m uvicorn backend.main:app --reload --host 127.0.0.1 --port 8000",
+    "dev:backend": "platform/venv/Scripts/python -m uvicorn backend.main:app --reload --host 127.0.0.1 --port 8000",
     "dev:frontend": "live-server platform/frontend --port=5500 --no-browser",
     "dev": "concurrently \"npm:dev:backend\" \"npm:dev:frontend\""
   },
