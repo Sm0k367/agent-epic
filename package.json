@@ -1,4 +1,4 @@
-
+{
   "name": "epic-tech-ai-platform",
   "version": "1.0.0",
   "description": "The development environment runner for the Epic Tech AI Platform.",
@@ -14,3 +14,4 @@
     "live-server": "^1.2.2"
   }
 }
+
