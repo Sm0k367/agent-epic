@@ -1,0 +1,271 @@
+/* --- ETAI-X Prime: Hyper-Accelerated Digital Architecture --- */
+/* ---           Frontend Styling - style.css              --- */
+
+/* --- 1. Global Setup &amp; Variables --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&amp;display=swap');
+
+:root {
+    --primary-color: #00aaff; /* A vibrant, electric blue */
+    --secondary-color: #9c27b0; /* A deep magenta for accents */
+    --background-color: #0d1117; /* A very dark, deep space blue/black */
+    --surface-color: #161b22; /* A slightly lighter surface for cards/sections */
+    --border-color: #30363d;
+    --text-color: #c9d1d9;
+    --text-color-muted: #8b949e;
+    --font-family: 'Poppins', sans-serif;
+    --transition-speed: 0.3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-image: radial-gradient(circle at 1% 1%, rgba(0, 170, 255, 0.1) 0%, transparent 30%),
+                      radial-gradient(circle at 99% 99%, rgba(156, 39, 176, 0.1) 0%, transparent 40%);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(0, 170, 255, 0.2);
+}
+
+h1 { font-size: 3.5rem; }
+h2 { font-size: 2.5rem; color: var(--primary-color); }
+p { margin-bottom: 1rem; color: var(--text-color-muted); }
+a { color: var(--primary-color); text-decoration: none; }
+
+/* --- 2. Header &amp; Navigation --- */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background: rgba(13, 17, 23, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+    transition: all var(--transition-speed) ease;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+.nav-links a {
+    color: var(--text-color);
+    margin-left: 2rem;
+    font-weight: 600;
+    position: relative;
+    transition: color var(--transition-speed) ease;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width var(--transition-speed) ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* --- 3. Hero Section --- */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h1 {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.5rem;
+}
+
+.hero .subtitle {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 170, 255, 0.2), 0 5px 15px rgba(156, 39, 176, 0.2);
+}
+
+/* --- 4. Section Styling --- */
+.section {
+    padding: 6rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.features-grid, .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card, .tech-card {
+    background-color: var(--surface-color);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card:hover, .tech-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    border-color: var(--primary-color);
+}
+
+.feature-card::before, .tech-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 170, 255, 0.1), transparent 40%);
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    transform-origin: center;
+}
+
+.feature-card:hover::before, .tech-card:hover::before {
+    opacity: 1;
+    animation: rotateGlow 5s linear infinite;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* --- 5. WaaS Section --- */
+.waas-section {
+    background-color: var(--surface-color);
+    text-align: center;
+}
+
+/* --- 6. Footer --- */
+.footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: var(--surface-color);
+    border-top: 1px solid var(--border-color);
+}
+
+.footer p {
+    margin: 0;
+    color: var(--text-color-muted);
+}
+
+/* --- 7. Animations &amp; Effects --- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes rotateGlow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Add fade-in animation for sections on scroll */
+.section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- 8. Responsive Design --- */
+@media (max-width: 768px) {
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+
+    .nav-links {
+        display: none; /* Simple solution for now, could be a hamburger menu */
+    }
+}
